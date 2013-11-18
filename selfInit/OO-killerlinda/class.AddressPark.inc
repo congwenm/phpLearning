@@ -31,10 +31,10 @@ class AddressPark extends Address{
      */
 
 
-    public function display(){
-        $output = '<div style="background-color: PaleGreen; padding: 20px;">';
-        $output .= parent::display();
-        $output .= '</div>';
-        return $output;
-    }
+//    public function display(){
+//        $output = '<div style="background-color: PaleGreen; padding: 20px;">';
+//        $output .= parent::display();
+//        $output .= '</div>';
+//        return $output;
+//    }
 }

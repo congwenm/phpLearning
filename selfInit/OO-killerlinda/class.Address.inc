@@ -66,6 +66,9 @@
         const ADDRESS_TYPE_PARK = 3;
 
         const ADDRESS_ERROR_NOT_FOUND = 1000;
+        const ADDRESS_ERROR_UNKNOWN_SUBCLASS = 1001;
+        const ADDRESS_ERROR_NO_DISPLAY_STRATEGY = 1002;
+
 
         // Street address
         public $street_address_1;
@@ -93,6 +96,13 @@
         protected $_time_created;
         protected $_time_updated;
 
+        private static $_display_strategies = array(
+            'AddressDisplayNoCountry',
+            'AddressDisplayFull',
+            'AddressDisplayPark',
+        );
+        private $_display_strategy;
+
         /**
          * Post clone behavior
          */
@@ -117,7 +127,7 @@
 
             // Ensure that the Addres can be populated
             if(!is_array($data)){
-                trigger_error('unable to contruct address with a ' . get_class($name));
+                trigger_error('unable to construct address with a ' . get_class($name));
             }
 
             // If there is at least one value, populate the Address with it.
@@ -234,21 +244,20 @@
          *  @return String
          */
         function display(){
-            $output = '';
-
-            $output .= $this->street_address_1;
-            if ($this->street_address_2){
-                $output .= '<br/>' . $this->street_address_2;
+            //Lazy Initialization
+            if(is_null($this->_display_strategy)){
+                foreach(self::$_display_strategies as $strategy_class_name){
+                    if($strategy_class_name::isAvailable($this)){
+                        $this->_display_strategy = $strategy_class_name;
+                    }
+                }
             }
-            $output .= '<br/>';
-            $output .= $this->city_name . ', ' . $this->subdivision_name;
-            $output .= ' '.$this->postal_code;
+            if(!$this->_display_strategy){
+                throw new ExceptionAddress('No display strategy found!', self::ADDRESS_ERROR_NO_DISPLAY_STRATEGY);
+            }
 
-            //Country
-            $output .= '<br/>';
-            $output .= $this->country_name;
-
-            return $output;
+            $display_strategy = $this->_display_strategy;
+            return $display_strategy::display($this);
         }
 
         /**
@@ -287,7 +296,11 @@
 
         final public static function getInstance($address_type_id, $data=array()){
             $class_name = 'Address' . self::$valid_address_types[$address_type_id];
-            echo 'class_name: ' . $class_name;
+//            echo 'class_name: ' . $class_name;
+            if (!class_exists($class_name)){
+                throw new ExceptionAddress('Address subclass not found, cannot create.'
+                    , self::ADDRESS_ERROR_UNKNOWN_SUBCLASS);
+            }
             return new $class_name($data);
         }
 

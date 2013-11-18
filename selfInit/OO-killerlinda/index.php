@@ -11,7 +11,10 @@ function __autoload($class_name){
 }
 
 echo '<h2>Instantiating AddressResidence</h2>';
-$address_residence = new AddressResidence();
+//$address_residence = new AddressResidence();
+
+//use factory method pattern
+$address_residence = Address::getInstance(Address::ADDRESS_TYPE_RESIDENCE);
 
 //echo '<h2>Empty Address</h2>';
 //echo '<tt><pre>' . var_export($address, TRUE). '</pre></tt>';
