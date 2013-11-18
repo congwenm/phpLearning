@@ -216,3 +216,5 @@ pip-log.txt
 
 #PhpStorm
 .idea/*
+.idea/
+.idea/*.xml
