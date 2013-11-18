@@ -1,6 +1,6 @@
 #PhpStorm
-.idea/*
 .idea/
+.idea/*
 # .idea/*.xml
 # Seems to be working
 idea/
