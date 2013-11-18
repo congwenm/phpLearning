@@ -1,3 +1,11 @@
+#PhpStorm
+.idea/*
+.idea/
+# .idea/*.xml
+# Seems to be working
+idea/
+
+
 #################
 ## Eclipse
 #################
@@ -214,9 +222,3 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 
-#PhpStorm
-.idea/*
-.idea/
-.idea/*.xml
-# Seems to be working
-idea/
