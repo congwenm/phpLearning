@@ -65,67 +65,34 @@ $address_park = new AddressPark(array(
 echo $address_park;
 echo '<tt><pre>' . var_export($address_park, TRUE) . '</pre></tt>';
 
-//echo '<tt><pre>'. var_export($address->valid_address_types, TRUE).'</pre></tt>'; //error
-/*  Scope Resolution Operator ::
- *  - for static you need to use Obj :: method/$property
- *  - for getting static, constant and overriden functions
- */
-/*echo '<h2>Displaying address types ... </h2>';
-echo '<tt><pre>'. var_export($address::$valid_address_types, TRUE).'</pre></tt>';
-
-echo '<h2>Testing address type ID validation</h2>';
-for ($id = 0; $id <= 4; $id++){
-    echo "<div>$id: ";
-    echo Address::isValidAddressTypeId($id) ? 'Valid' : 'Invalid';
-    echo "</div>";
-}*/
-
 
 
 /**
- * Cloning and comparing objects
- * - making a backup
- * - shortcuts
- * - clone
+ * Typecasting,
  */
-echo '<h2>Cloning AddressPark</h2>';
-$address_park_clone = clone $address_park;
-echo "address_park_clone is"; echo $address_park_clone->display() .
-    '<tt><pre>' . var_export($address_park_clone, TRUE) . '</pre></tt>';
-echo "address_park is"; echo $address_park->display() .
-    '<tt><pre>' . var_export($address_park, TRUE) . '</pre></tt>';
+//echo '<h2>Testing typecasting to an object</h2>';
+//$test_object = (object) array(
+//    'hello' => 'world',
+//    'nested' => array('key' => 'value'),
+//); //key strings fine
 
-echo '<tt><pre>' . var_export($address_park_clone, TRUE) . '</pre></tt>';
-echo '$address_park_clone is ' . ($address_park == $address_park_clone ? '' : 'not ') . 'a copy of $address park.';
+//$test_object = (object) 12345; //stored as scalar=>12345;
+//
+//echo '<tt><pre>' . var_export($test_object, TRUE) . '</pre></tt>';
 
+echo '<h2>Loading from database</h2>';
+try{
+    $address_db = Address::load(0);
+    echo '<tt><pre>' . var_export($address_db, TRUE) . '</pre></tt>';
+}
+catch(ExceptionAddress $e){
+    echo $e;
+}
 
+//echo '<h2>Loading again from database</h2>';
+//$address_db2 = Address::load(2);
+//echo '<tt><pre>' . var_export($address_db2, TRUE) . '</pre></tt>';
 
-//$arr = array(1,2,3,4,5,6);
-//for ($i = 0; $i < 7; $i ++){
-//    if(array_key_exists($i, $arr)){
-//        echo $i;
-//    }
-//}
-
-//echo (NULL == null); //true
-
-/**
- * Alias
- * - multiple variables write to the same value
- * Object variables do NOT contain object itself
- *
- */
-echo '<h2>Copying AddressBusiness reference</h2>';
-$address_business_copy = $address_business;
-echo '$address_business_copy is ' . ($address_business === $address_business_copy ? '' : 'not') . ' a copy of $address_business.';
-
-echo '<h2>Setting $address_business copy as a new AddressPark</h2>';
-$address_business = new AddressPark();
-// ??reference symbol
-
-echo '$address_business_copy is ' . ($address_business === $address_business_copy ? '' : 'not '). ' a copy of $address_business.';
-echo '<br/>$address_business is class '. get_class($address_business) . ' ';
-echo '<br/> $address_business_copy is ' . ($address_business_copy instanceof AddressBusiness ? '' : 'not ') . 'an AddressBusiness. ';
 
 
 ?>

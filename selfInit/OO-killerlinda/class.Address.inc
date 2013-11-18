@@ -65,6 +65,8 @@
         const ADDRESS_TYPE_BUSINESS = 2;
         const ADDRESS_TYPE_PARK = 3;
 
+        const ADDRESS_ERROR_NOT_FOUND = 1000;
+
         // Street address
         public $street_address_1;
         public $street_address_2;
@@ -125,6 +127,8 @@
                     if (in_array($name, array(
                         'time_created',
                         'time_updated',
+                        'address_id',
+                        'address_type_id',
                     ))){
                         $name = '_' . $name;
                     }
@@ -253,7 +257,38 @@
          * @return mixed|void
          */
         final public static function load($address_id){
+            $db = Database::getInstance();
+            $mysqli = $db->getConnection();
 
+            $sql_query = 'SELECT location.* ';
+            $sql_query .= 'FROM location ';
+            $sql_query .= 'WHERE address_id = "' . (int) $address_id . '" ';
+
+            $result = $mysqli->query($sql_query);
+//            $result = mysqli_query($mysqli, $sql_query);
+            if (!$result) { echo '<tt><pre>' . 'WTF is GOING ON??' . '</pre></tt>';}
+
+//            if ($row = $result->fetch_object()){ //standard object
+//                var_dump($row);
+//                exit();
+//            }
+            if ($row = $result->fetch_assoc()){
+                return self::getInstance($row['address_type_id'], $row);
+            }
+            throw new ExceptionAddress('Address not found.', self::ADDRESS_ERROR_NOT_FOUND);
+        }
+
+        /**
+         * Given an address_type_id, return an instance of that subclass.
+         * @param int $address_type_id
+         * @param array $data
+         * @return Address subclass
+         */
+
+        final public static function getInstance($address_type_id, $data=array()){
+            $class_name = 'Address' . self::$valid_address_types[$address_type_id];
+            echo 'class_name: ' . $class_name;
+            return new $class_name($data);
         }
 
         /**
