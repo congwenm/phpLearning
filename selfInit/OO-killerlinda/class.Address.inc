@@ -15,7 +15,7 @@
 		public $-addressId;             //invalid syntax -
         public $city_copy = $_city;     //invalid initialization, runtime evaluation
 	}*/
-    abstract class Address {
+    abstract class Address implements Model{
 
         //Amount types
         static public $valid_address_types = array(
@@ -91,6 +91,15 @@
         protected $_time_created;
         protected $_time_updated;
 
+        /**
+         * Post clone behavior
+         */
+        function __clone(){
+            // for demo purpose, set _time_created and _time_updated to obvious values;
+            $this->_time_created = time();
+            $this->_time_updated = NULL;
+        }
+
 
         /**
          * __construct() and __toString() are magic methods, a dozen more, fail safe,
@@ -101,6 +110,7 @@
          * @param array $data Optional array of property names and values.
          */
         function __construct($data=array()){
+            $this->_init();
             $this->_time_created = time();
 
             // Ensure that the Addres can be populated
@@ -158,10 +168,12 @@
          */
         function __set($name, $value){
             //Only set valid address type id.
-            if ('address_type_id' == $name){
-                $this->_setAddressTypeId($value);
-                return;
-            }
+
+            /*Removed for having abstract method _init call the _setAddressTypeId*/
+//            if ('address_type_id' == $name){
+//                $this->_setAddressTypeId($value);
+//                return;
+//            }
 
             //Allow anything to set the Postal code
             if('postal_code' == $name){
@@ -180,6 +192,12 @@
         function __toString(){
             return $this->display();
         }
+
+        /**
+         * Force extending classes to implement init method.
+         * @return mixed
+         */
+        abstract protected function _init();
 
         /**
          * Guess the postal code given the subdivision and city name.
@@ -228,5 +246,22 @@
 
             return $output;
         }
+
+        /**
+         * Final because we don't want the child classes to implement a variation of this method
+         * @param int $address_id
+         * @return mixed|void
+         */
+        final public static function load($address_id){
+
+        }
+
+        /**
+         * Save an Address.
+         */
+        final public function save(){
+
+        }
+
     }
  ?>

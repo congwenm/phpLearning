@@ -34,7 +34,6 @@ class Database {
         // Error handling.
         if(mysqli_connect_error()){
             trigger_error('Failed to connect to MYSQL: ' . mysqli_connect_error(), E_USER_ERROR);
-
         }
     }
 

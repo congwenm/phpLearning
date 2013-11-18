@@ -4,15 +4,19 @@
     <list default="true" id="2a4fc00d-26f8-4ec6-b941-bc0c12eeb877" name="Default" comment="" />
     <ignored path="Php.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="2a4fc00d-26f8-4ec6-b941-bc0c12eeb877" time="1384392579729" ignored="false" />
+    <file path="/Dummy.txt" changelist="2a4fc00d-26f8-4ec6-b941-bc0c12eeb877" time="1384660585652" ignored="false" />
     <file path="/a.php" changelist="2a4fc00d-26f8-4ec6-b941-bc0c12eeb877" time="1384392658254" ignored="false" />
-    <file path="/index.php" changelist="2a4fc00d-26f8-4ec6-b941-bc0c12eeb877" time="1384409220430" ignored="false" />
-    <file path="/class.Address.inc" changelist="2a4fc00d-26f8-4ec6-b941-bc0c12eeb877" time="1384409120087" ignored="false" />
+    <file path="/index.php" changelist="2a4fc00d-26f8-4ec6-b941-bc0c12eeb877" time="1384742661416" ignored="false" />
+    <file path="/class.Address.inc" changelist="2a4fc00d-26f8-4ec6-b941-bc0c12eeb877" time="1384738712284" ignored="false" />
     <file path="/class.Database.inc.php" changelist="2a4fc00d-26f8-4ec6-b941-bc0c12eeb877" time="1384406692150" ignored="false" />
     <file path="/a.dummy" changelist="2a4fc00d-26f8-4ec6-b941-bc0c12eeb877" time="1384409184863" ignored="false" />
     <file path="/class.AddressResidence.inc.php" changelist="2a4fc00d-26f8-4ec6-b941-bc0c12eeb877" time="1384408647751" ignored="false" />
     <file path="/class.AddressBusiness.inc.php" changelist="2a4fc00d-26f8-4ec6-b941-bc0c12eeb877" time="1384408704899" ignored="false" />
     <file path="/class.AddressPark.inc.php" changelist="2a4fc00d-26f8-4ec6-b941-bc0c12eeb877" time="1384408749574" ignored="false" />
+    <file path="/class.AddressResidence.inc" changelist="2a4fc00d-26f8-4ec6-b941-bc0c12eeb877" time="1384728862555" ignored="false" />
+    <file path="/class.AddressBusiness.inc" changelist="2a4fc00d-26f8-4ec6-b941-bc0c12eeb877" time="1384728892748" ignored="false" />
+    <file path="/class.AddressPark.inc" changelist="2a4fc00d-26f8-4ec6-b941-bc0c12eeb877" time="1384738172621" ignored="false" />
+    <file path="/class.Model.inc" changelist="2a4fc00d-26f8-4ec6-b941-bc0c12eeb877" time="1384729426169" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,22 +41,11 @@
           <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="54" column="27" selection-start="1649" selection-end="1649" vertical-scroll-proportion="0.7108014">
+                <state line="130" column="2" selection-start="4241" selection-end="4241" vertical-scroll-proportion="0.53870624">
                   <folding>
-                    <marker date="1384410550505" expanded="true" signature="2134:2188" placeholder="..." />
-                    <marker date="1384410550505" expanded="true" signature="2522:2666" placeholder="..." />
-                    <marker date="1384410550505" expanded="true" signature="2593:2656" placeholder="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="class.AddressBusiness.inc" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.AddressBusiness.inc">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="1" selection-start="237" selection-end="237" vertical-scroll-proportion="-9.807693">
-                  <folding>
-                    <element signature="e#6#165#0" expanded="true" />
+                    <marker date="1384742670965" expanded="true" signature="2531:2585" placeholder="..." />
+                    <marker date="1384742670965" expanded="true" signature="4413:4557" placeholder="..." />
+                    <marker date="1384742670965" expanded="true" signature="4484:4547" placeholder="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -65,23 +58,17 @@
           <file leaf-file-name="class.Address.inc" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.Address.inc">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="13" selection-start="505" selection-end="505" vertical-scroll-proportion="-3.6666667">
-                  <folding>
-                    <element signature="e#113#140#0" expanded="false" />
-                    <element signature="e#2700#2801#0" expanded="false" />
-                    <element signature="e#2811#2925#0" expanded="false" />
-                    <element signature="e#3335#3711#0" expanded="false" />
-                    <element signature="e#3456#3581#0" expanded="false" />
-                    <element signature="e#3472#3580#0" expanded="false" />
-                    <element signature="e#3452#3650#0" expanded="false" />
-                    <element signature="e#3746#3841#0" expanded="false" />
-                    <element signature="e#4468#4688#0" expanded="false" />
-                    <element signature="e#4857#4957#0" expanded="false" />
-                    <element signature="e#5530#5600#0" expanded="false" />
-                    <element signature="e#5688#5848#0" expanded="false" />
-                    <element signature="e#6597#6679#0" expanded="false" />
-                    <element signature="e#6795#6900#0" expanded="false" />
-                  </folding>
+                <state line="49" column="52" selection-start="1653" selection-end="1653" vertical-scroll-proportion="-1.2857143">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="class.Model.inc" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.Model.inc">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="13" column="19" selection-start="295" selection-end="295" vertical-scroll-proportion="-6.290323">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -89,7 +76,7 @@
           <file leaf-file-name="restBone.php" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/selfInit/restBone.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="31" selection-start="182" selection-end="182" vertical-scroll-proportion="-5.230769">
+                <state line="8" column="31" selection-start="182" selection-end="182" vertical-scroll-proportion="1.5806452">
                   <folding />
                 </state>
               </provider>
@@ -98,9 +85,9 @@
           <file leaf-file-name="class.AddressResidence.inc" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.AddressResidence.inc">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="0" selection-start="167" selection-end="237" vertical-scroll-proportion="-5.8846154">
+                <state line="20" column="1" selection-start="381" selection-end="381" vertical-scroll-proportion="-5.806452">
                   <folding>
-                    <element signature="e#6#165#0" expanded="true" />
+                    <element signature="e#241#274#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -109,10 +96,8 @@
           <file leaf-file-name="class.Database.inc" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.Database.inc">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="51" column="0" selection-start="1155" selection-end="1155" vertical-scroll-proportion="-30.5">
-                  <folding>
-                    <element signature="e#6#165#0" expanded="true" />
-                  </folding>
+                <state line="37" column="5" selection-start="919" selection-end="919" vertical-scroll-proportion="-15.0">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -120,10 +105,19 @@
           <file leaf-file-name="class.AddressPark.inc" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.AddressPark.inc">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="0" selection-start="226" selection-end="226" vertical-scroll-proportion="0.24943566">
+                <state line="39" column="1" selection-start="988" selection-end="988" vertical-scroll-proportion="0.5368764">
                   <folding>
-                    <element signature="e#6#165#0" expanded="true" />
+                    <marker date="1384738173837" expanded="true" signature="842:885" placeholder="..." />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="class.AddressBusiness.inc" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.AddressBusiness.inc">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="15" column="16" selection-start="283" selection-end="283" vertical-scroll-proportion="-4.354839">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -152,6 +146,11 @@
         <option value="$PROJECT_DIR$/selfInit/OO-killerlinda/class.AddressResidence.inc.php" />
         <option value="$PROJECT_DIR$/selfInit/OO-killerlinda/class.AddressBusiness.inc.php" />
         <option value="$PROJECT_DIR$/selfInit/OO-killerlinda/class.AddressPark.inc.php" />
+        <option value="$PROJECT_DIR$/selfInit/OO-killerlinda/class.Database.inc" />
+        <option value="$PROJECT_DIR$/selfInit/OO-killerlinda/class.AddressResidence.inc" />
+        <option value="$PROJECT_DIR$/selfInit/OO-killerlinda/class.AddressBusiness.inc" />
+        <option value="$PROJECT_DIR$/selfInit/OO-killerlinda/class.Model.inc" />
+        <option value="$PROJECT_DIR$/selfInit/OO-killerlinda/class.AddressPark.inc" />
         <option value="$PROJECT_DIR$/selfInit/OO-killerlinda/class.Address.inc" />
         <option value="$PROJECT_DIR$/selfInit/OO-killerlinda/index.php" />
       </list>
@@ -159,9 +158,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="54" />
-    <option name="y" value="-8" />
-    <option name="width" value="1874" />
+    <option name="x" value="1358" />
+    <option name="y" value="-320" />
+    <option name="width" value="1936" />
     <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -273,26 +272,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="false" />
+    <frame x="1358" y="-320" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14072847" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0953125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294702" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -358,78 +357,132 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/selfInit/restBone.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="31" selection-start="182" selection-end="182" vertical-scroll-proportion="-5.230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.AddressBusiness.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="1" selection-start="237" selection-end="237" vertical-scroll-proportion="-9.807693">
-          <folding>
-            <element signature="e#6#165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.Address.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="13" selection-start="505" selection-end="505" vertical-scroll-proportion="-3.6666667">
-          <folding>
-            <element signature="e#113#140#0" expanded="false" />
-            <element signature="e#2700#2801#0" expanded="false" />
-            <element signature="e#2811#2925#0" expanded="false" />
-            <element signature="e#3335#3711#0" expanded="false" />
-            <element signature="e#3456#3581#0" expanded="false" />
-            <element signature="e#3472#3580#0" expanded="false" />
-            <element signature="e#3452#3650#0" expanded="false" />
-            <element signature="e#3746#3841#0" expanded="false" />
-            <element signature="e#4468#4688#0" expanded="false" />
-            <element signature="e#4857#4957#0" expanded="false" />
-            <element signature="e#5530#5600#0" expanded="false" />
-            <element signature="e#5688#5848#0" expanded="false" />
-            <element signature="e#6597#6679#0" expanded="false" />
-            <element signature="e#6795#6900#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.AddressResidence.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="167" selection-end="237" vertical-scroll-proportion="-5.8846154">
-          <folding>
-            <element signature="e#6#165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.Database.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1155" selection-end="1155" vertical-scroll-proportion="-30.5">
-          <folding>
-            <element signature="e#6#165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.AddressPark.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="226" selection-end="226" vertical-scroll-proportion="0.24943566">
+        <state line="14" column="1" selection-start="228" selection-end="228" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#6#165#0" expanded="true" />
+            <marker date="1384738173837" expanded="true" signature="842:885" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="27" selection-start="1649" selection-end="1649" vertical-scroll-proportion="0.7108014">
+        <state line="54" column="27" selection-start="1649" selection-end="1649" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1384410550505" expanded="true" signature="2134:2188" placeholder="..." />
-            <marker date="1384410550505" expanded="true" signature="2522:2666" placeholder="..." />
-            <marker date="1384410550505" expanded="true" signature="2593:2656" placeholder="{...}" />
+            <marker date="1384742670965" expanded="true" signature="2531:2585" placeholder="..." />
+            <marker date="1384742670965" expanded="true" signature="4413:4557" placeholder="..." />
+            <marker date="1384742670965" expanded="true" signature="4484:4547" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.AddressBusiness.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="1" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.Address.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="13" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selfInit/restBone.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="31" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.AddressResidence.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="167" selection-end="237" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#241#274#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.Database.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="1155" selection-end="1155" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.AddressPark.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1384738173837" expanded="true" signature="842:885" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.Database.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="5" selection-start="919" selection-end="919" vertical-scroll-proportion="-15.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.AddressBusiness.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="16" selection-start="283" selection-end="283" vertical-scroll-proportion="-4.354839">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.AddressResidence.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="1" selection-start="381" selection-end="381" vertical-scroll-proportion="-5.806452">
+          <folding>
+            <element signature="e#241#274#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selfInit/restBone.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="31" selection-start="182" selection-end="182" vertical-scroll-proportion="1.5806452">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.Model.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="19" selection-start="295" selection-end="295" vertical-scroll-proportion="-6.290323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.Address.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="52" selection-start="1653" selection-end="1653" vertical-scroll-proportion="-1.2857143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.AddressPark.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="1" selection-start="988" selection-end="988" vertical-scroll-proportion="0.5368764">
+          <folding>
+            <marker date="1384738173837" expanded="true" signature="842:885" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="130" column="2" selection-start="4241" selection-end="4241" vertical-scroll-proportion="0.53870624">
+          <folding>
+            <marker date="1384742670965" expanded="true" signature="2531:2585" placeholder="..." />
+            <marker date="1384742670965" expanded="true" signature="4413:4557" placeholder="..." />
+            <marker date="1384742670965" expanded="true" signature="4484:4547" placeholder="{...}" />
           </folding>
         </state>
       </provider>
