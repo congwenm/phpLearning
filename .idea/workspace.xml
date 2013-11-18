@@ -39,10 +39,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="80" column="68" selection-start="2393" selection-end="2393" vertical-scroll-proportion="0.27824268">
+                <state line="94" column="0" selection-start="2742" selection-end="2742" vertical-scroll-proportion="0.49790794">
                   <folding />
                 </state>
               </provider>
@@ -61,10 +61,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="class.Address.inc" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="class.Address.inc" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.Address.inc">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="270" column="68" selection-start="8641" selection-end="8641" vertical-scroll-proportion="-11.83871">
+                <state line="270" column="68" selection-start="8641" selection-end="8641" vertical-scroll-proportion="0.39804772">
                   <folding />
                 </state>
               </provider>
@@ -79,10 +79,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="class.Model.inc" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="class.Model.inc" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.Model.inc">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="19" selection-start="295" selection-end="295" vertical-scroll-proportion="0.20855615">
+                <state line="20" column="19" selection-start="422" selection-end="422" vertical-scroll-proportion="-9.67742">
                   <folding />
                 </state>
               </provider>
@@ -477,23 +477,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/index.php">
+    <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.Model.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="68" selection-start="2393" selection-end="2393" vertical-scroll-proportion="0.27824268">
+        <state line="20" column="19" selection-start="422" selection-end="422" vertical-scroll-proportion="-9.67742">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.Address.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="270" column="68" selection-start="8641" selection-end="8641" vertical-scroll-proportion="-11.83871">
+        <state line="270" column="68" selection-start="8641" selection-end="8641" vertical-scroll-proportion="0.39804772">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/class.Model.inc">
+    <entry file="file://$PROJECT_DIR$/selfInit/OO-killerlinda/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="19" selection-start="295" selection-end="295" vertical-scroll-proportion="0.20855615">
+        <state line="94" column="0" selection-start="2742" selection-end="2742" vertical-scroll-proportion="0.49790794">
           <folding />
         </state>
       </provider>
