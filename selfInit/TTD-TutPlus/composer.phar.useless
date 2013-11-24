@@ -1,0 +1,7 @@
+{
+    "name": "Congwen/php-unit",
+    "require": {
+    	"php": ">5.4.12",
+    	"phpunit/phpunit": "3.7.28"
+    }
+}
