@@ -2,9 +2,10 @@
 /**
  * Created by JetBrains PhpStorm.
  * User: Congwen
- * Date: 11/23/13
- * Time: 4:25 AM
+ * Date: 11/24/13
+ * Time: 2:48 AM
  * To change this template use File | Settings | File Templates.
  */
-
-$_GET[THAT_CONSTANT_IS_NOT_DEFINED];
+function __autoload($class_name){
+    include '../src/' . $class_name . ".php";
+}

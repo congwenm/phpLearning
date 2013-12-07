@@ -9,7 +9,10 @@
 
 class IssuesTest extends PHPUnit_Framework_TestCase {
 
-
+    /**
+     * Does not work here.
+     * @expectedException PHPUnit_Framework_Error
+     */
 //    public function testError()
 //    {
 //        new SomeClassThatDontExistsInThatContext;

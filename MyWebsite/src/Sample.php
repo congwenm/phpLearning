@@ -2,9 +2,10 @@
 /**
  * Created by JetBrains PhpStorm.
  * User: Congwen
- * Date: 11/23/13
- * Time: 4:25 AM
+ * Date: 12/7/13
+ * Time: 12:28 AM
  * To change this template use File | Settings | File Templates.
  */
+class Sample{
 
-$_GET[THAT_CONSTANT_IS_NOT_DEFINED];
+}
