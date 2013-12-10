@@ -3,7 +3,7 @@
 define('DATA_PATH', realpath(dirname(__FILE__).'/data'));
 
 //Define our id-key pairs
-$applicatios = array('APP001' => '28e336ac6c9423d946ba02d19c6a2632',);
+$applications = array('APP001' => '28e336ac6c9423d946ba02d19c6a2632',);
 
 //include our models
 include_once 'models/TodoItem.php';
