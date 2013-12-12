@@ -57,13 +57,13 @@ class AxialController
 }
 
 class VoidCommand{
-    var $commandArray;
+    var $commandArray = "";
     /**
      * @param = [params given in url]
      * Constructor
      */
     function __construct($commandArray){
-        $this->$commandArray = implode($commandArray);
+        $this->$commandArray = "dfsdf";//serialize($commandArray);
     }
 
     /**
