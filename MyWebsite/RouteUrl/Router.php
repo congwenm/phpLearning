@@ -28,16 +28,56 @@ class AxialController
     function getActionName(){
         return $this->actionName;
     }
+
+    function Dispatch()
+    {
+        $controllerName = $this->command->getControllerName();
+        $actionName = $this->command->getActionName();
+
+        /**
+         * Logging
+         */
+        switch ($controllerName)
+        {
+            default:
+                echo 'Next Command: <span class="beta">' . $controllerName .'</span>';
+                echo '<br/>Will Execute its Action: <span class="beta">' . $actionName .'</span>';
+                break;
+        }
+
+        /**
+         * Find the corresponding command to execute by including controller and find its action
+         */
+        include 'src/controllers/'. ucfirst($controllerName) .'Controller.php';
+        $controllerName = $controllerName.'Controller';
+        $ctrl = new $controllerName;
+        $action = $ctrl::$actionName();
+        return $action;
+    }
 }
 
 class VoidCommand{
-
+    var $commandArray;
     /**
      * @param = [params given in url]
      * Constructor
      */
-    function __construct($command){
+    function __construct($commandArray){
+        $this->$commandArray = implode($commandArray);
+    }
 
+    /**
+     * return an invalid response
+     */
+    function Dispatch(){
+        $resp = "";
+        $invalidMethodMsg = (object)array(
+            'InvalidCommand' => (object)array(
+                'Message' => 'We do not understand the action you are looking for.',
+                'Command' => $this->commandArray
+            )
+        );
+        $resp = json_encode($invalidMethodMsg);
     }
 }
 
@@ -73,7 +113,6 @@ class AxialUrlInterpreter{
             $this->command = new VoidCommand($commandArray);
         }
 //        $parameters = array_slice($commandArray, 1);
-
     }
 
     function getCommand(){
@@ -89,29 +128,4 @@ class AxialDispatcher
         $this->command = $command;
     }
 
-    function Dispatch()
-    {
-        $controllerName = $this->command->getControllerName();
-        $actionName = $this->command->getActionName();
-
-        /**
-         * Logging
-         */
-        switch ($controllerName)
-        {
-            default:
-                echo 'Next Command: <span class="beta">' . $controllerName .'</span>';
-                echo '<br/>Will Execute its Action: <span class="beta">' . $actionName .'</span>';
-                break;
-        }
-
-        /**
-         * Find the corresponding command to execute by including controller and find its action
-         */
-        include 'src/controllers/'. ucfirst($controllerName) .'Controller.php';
-        $controllerName = $controllerName.'Controller';
-        $ctrl = new $controllerName;
-        $action = $ctrl::$actionName();
-        return $action;
-    }
 }

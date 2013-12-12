@@ -21,6 +21,6 @@ include 'RouteUrl/Router.php';
 //echo '<h1>This is the Index Page of My Website</h1><br/>';
 $interpreter = new AxialUrlInterpreter();
 $command = $interpreter->getCommand();
-$dispatcher = new AxialDispatcher($command);
-$dispatcher->Dispatch();
-
+//$dispatcher = new AxialDispatcher($command);
+//$dispatcher->Dispatch();
+$command->Dispatch();
