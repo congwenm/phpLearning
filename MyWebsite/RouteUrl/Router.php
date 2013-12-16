@@ -31,8 +31,8 @@ class AxialController
 
     function Dispatch()
     {
-        $controllerName = $this->command->getControllerName();
-        $actionName = $this->command->getActionName();
+        $controllerName = $this->getControllerName();
+        $actionName = $this->getActionName();
 
         /**
          * Logging
@@ -40,8 +40,8 @@ class AxialController
         switch ($controllerName)
         {
             default:
-                echo 'Next Command: <span class="beta">' . $controllerName .'</span>';
-                echo '<br/>Will Execute its Action: <span class="beta">' . $actionName .'</span>';
+//                echo 'Next Command: <span class="beta">' . $controllerName .'</span>';
+//                echo '<br/>Will Execute its Action: <span class="beta">' . $actionName .'</span>';
                 break;
         }
 
@@ -87,8 +87,10 @@ class AxialUrlInterpreter{
      * Old Fashioned Constructors
      */
     function AxialUrlInterpreter(){
-        $requestURI = explode('/', $_SERVER['REQUEST_URI']);
-        $scriptName = explode('/', $_SERVER['SCRIPT_NAME']);
+//        $requestURI = explode('/', $_SERVER['REQUEST_URI']);
+        $requestURI = preg_split( "/(\/|\?)/", $_SERVER['REQUEST_URI']);
+//        $scriptName = explode('/', $_SERVER['SCRIPT_NAME']);
+        $scriptName = preg_split("/(\/|\?)/", $_SERVER['SCRIPT_NAME']);
 
         /**
          * Deduct Script Pathname from Request Url, to get the url of the command
