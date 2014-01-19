@@ -1,13 +1,3 @@
-<style type="text/css">
-    .beta{
-        font-weight: 600;
-        color: #666666;
-        font-size: 1.5em;
-        margin: 0 10px;
-    }
-</style>
-
-
 <?php
 /**
  * Created by JetBrains PhpStorm.
