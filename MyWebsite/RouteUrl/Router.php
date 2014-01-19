@@ -31,24 +31,28 @@ class AxialController
 
     function Dispatch()
     {
-        $controllerName = $this->command->getControllerName();
-        $actionName = $this->command->getActionName();
+        $controllerName = $this->getControllerName();
+        $actionName = $this->getActionName();
 
         /**
          * Logging
          */
-        switch ($controllerName)
-        {
-            default:
-                echo 'Next Command: <span class="beta">' . $controllerName .'</span>';
-                echo '<br/>Will Execute its Action: <span class="beta">' . $actionName .'</span>';
-                break;
-        }
+//        switch ($controllerName)
+//        {
+//            default:
+//                echo 'Next Command: <span class="beta">' . $controllerName .'</span>';
+//                echo '<br/>Will Execute its Action: <span class="beta">' . $actionName .'</span>';
+//                break;
+//        }
 
         /**
          * Find the corresponding command to execute by including controller and find its action
          */
-        include 'src/controllers/'. ucfirst($controllerName) .'Controller.php';
+        try{
+            include 'src/controllers/'. ucfirst($controllerName) .'Controller.php';
+        } catch (Exception $e){
+            //tobe continued
+        }
         $controllerName = $controllerName.'Controller';
         $ctrl = new $controllerName;
         $action = $ctrl::$actionName();
@@ -63,7 +67,7 @@ class VoidCommand{
      * Constructor
      */
     function __construct($commandArray){
-        $this->$commandArray = implode($commandArray);
+        $this->commandArray = $commandArray;
     }
 
     /**
@@ -74,10 +78,12 @@ class VoidCommand{
         $invalidMethodMsg = (object)array(
             'InvalidCommand' => (object)array(
                 'Message' => 'We do not understand the action you are looking for.',
+                'Status' => '2',
                 'Command' => $this->commandArray
             )
         );
         $resp = json_encode($invalidMethodMsg);
+        return $resp;
     }
 }
 

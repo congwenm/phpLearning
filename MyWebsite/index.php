@@ -23,4 +23,4 @@ $interpreter = new AxialUrlInterpreter();
 $command = $interpreter->getCommand();
 //$dispatcher = new AxialDispatcher($command);
 //$dispatcher->Dispatch();
-$command->Dispatch();
+echo $command->Dispatch();
