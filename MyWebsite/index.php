@@ -9,6 +9,7 @@
 
 include 'RouteUrl/Router.php';
 //echo '<h1>This is the Index Page of My Website</h1><br/>';
+header('Content-Type: application/json');
 $interpreter = new AxialUrlInterpreter();
 $command = $interpreter->getCommand();
 //$dispatcher = new AxialDispatcher($command);
